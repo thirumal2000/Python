@@ -1,0 +1,137 @@
+                                          PYTHON PROGRAMMES
+
+1.Write a program to find factorial of the given number
+CODE:
+num=int(input())
+fact=1
+for i in range(1,num+1):
+    fact=fact*i
+print(fact)
+OUTPUT:
+4
+24
+================================================================================================================================
+2.Write a program to check whether the given number is even or odd.
+CODE:
+num=int(input())
+if num%2==0:
+    print('yes')
+else:
+    print('no')
+OUTPUT:
+2
+yes
+==================================================================================================================================
+3.Write a program to swap two numbers using a temporary variable. 
+CODE:
+num1=int(input())
+num2=int(input())
+temp=num1
+num1=num2
+num2=temp
+print(num1,num2)
+OUTPUT:
+5
+10
+10 5
+===================================================================================================================================
+4.Write a program to swap two numbers without using a temporary variable. 
+CODE:
+num1=int(input())
+num2=int(input())
+num1=num1+num2
+num2=num1-num2
+num1=num1-num2
+print(num1,num2)
+OUTPUT:
+5
+10
+10 5
+====================================================================================================================================
+5.Write a program to swap two numbers using bitwise operators. 
+CODE:
+num1=int(input())
+num2=int(input())
+num1=num1^num2
+num2=num1^num2
+num1=num1^num2
+print(num1,num2)
+OUTPUT:
+5
+10
+10 5
+=====================================================================================================================================
+6.Write a program to find the greatest of three numbers. 
+CODE:
+num1=int(input())
+num2=int(input())
+num3=int(input())
+if num1>num2:
+    print(num2)
+elif num2>num3:
+    print(num2)
+else:
+    print(num3)
+OUTPUT:
+7
+9
+5
+9
+======================================================================================================================================
+7.Write a program to find the greatest among ten numbers. 
+CODE:
+list1=list(map(int,input().split()))
+print(max(list1))
+OUTPUT:
+2 3 4 5 6 7 8 8 9 1
+9
+=======================================================================================================================================
+8.Write a program to check whether the given number is a prime. 
+CODE:
+num=int(input())
+flag=False
+for i in range(2,num):
+    if num%i==0:
+        flag=True
+        break
+print('no' if flag==True else 'yes')
+OUTPUT:
+5
+yes
+========================================================================================================================================
+9.Write a program to check whether the given number is a palindromic number. 
+CODE:
+num=input()
+print('yes' if num==num[::-1] else 'no')
+OUTPUT:
+2002
+yes
+==========================================================================================================================================
+10.Write a program to check whether the given string is a palindrome. 
+CODE:
+str=input()
+print('yes' if str==str[::-1] else 'no')
+OUTPUT:
+madam
+yes
+==========================================================================================================================================
+11.Write a program to generate the Fibonacci series. 
+CODE:
+num=int(input())
+a,b=0,1
+print(a,b,end=" ")
+for i in range(num): 
+            c = a + b 
+            a = b 
+            b = c
+            print(b,end=" ")
+OUTPUT:
+5
+0 1 1 2 3
+==============================================================================================================================================
+12.Write a program to print "Hello World" without using semicolon anywhere in the code. 
+CODE:
+
+================================================================================================================================================
+14.Write a program to compare two strings without using strcmp() function. 
+CODE:

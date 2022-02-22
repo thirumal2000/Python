@@ -1,0 +1,299 @@
+                                BASIC STRING QUSTIONS
+
+<<1>>QUESTION--->Python program to check if a string is palindrome or not
+CODE:
+str=input()
+if str[::-1]==str:
+   print('palindrome')
+else:
+   print('no')
+OUTPUT:
+madam
+palindrome
+
+===================================================================================================================
+
+<<2>>QUESTION--->Python program to check whether the string is Symmetrical or Palindrome
+CODE:
+str=input()
+mid=len(str)//2
+if str[:mid]==str[mid:]:
+   print('Symmetrical')
+else:
+   print('Not Symmetrical')
+OUTPUT:
+yoyo
+Symmetrical
+
+========================================================================================================================
+
+<<3>>QUESTION--->Reverse words in a given String in Python
+CODE:
+str=input()
+str=str.split()
+list1=[]
+for i in str:
+   reverse_str=i[::-1]
+   list1.append(reverse_str)
+print(*list1)
+OUTPUT:
+hi hello world jii
+ih olleh dlrow iij
+
+========================================================================================================================
+
+<<4>>QUESTION--->Ways to remove i’th character from string in Python
+CODE:
+str=input()
+remove=int(input())
+print(str.replace(str[remove],''))
+OUTPUT:
+helloworld
+4
+hellwrld
+CODE:
+str=input()
+remove=int(input())
+print(str[:remove]+str[remove+1:])
+OUTPUT:
+helloworld
+4
+hellworld
+
+========================================================================================================================
+
+<<5>>QUESTION--->Python | Check if a Substring is Present in a Given String
+CODE:
+str=input()
+sub_str=input()
+if sub_str in str:
+   print('yes')
+else:
+   print('no')
+OUTPUT:
+helloworld
+hello
+yes
+
+========================================================================================================================
+
+<<6>>QUESTION--->Python – Words Frequency in String Shorthands
+CODE:
+str=input()
+str = str.split()
+str2 = []
+for i in str:             
+   if i not in str2:
+      str2.append(i) 
+for i in range(len(str2)):
+   print( str2[i],':', str.count(str2[i]))  
+OUTPUT:
+geeks for geeks
+geeks : 2
+for : 1
+
+===========================================================================================================================
+
+<<7>>QUESTION--->Python – Convert Snake case to Pascal case
+CODE:
+str=input()
+str=str.replace("_"," ").title()
+str=str.replace(" ","")
+print(str)
+OUTPUT:
+geeks_for_geeks
+GeeksForGeeks
+
+=============================================================================================================================
+
+<<8>>QUESTION--->Find length of a string in python (4 ways)
+CODE:
+---1---
+str=input()
+print(len(str))
+OUTPUT:
+helloworld
+10
+---2---
+str=input()
+count=0
+for i in str:
+   count=count+1
+print(count)
+OUTPUT:
+helloworld
+10
+---3---
+str = input()
+position = 0
+while str[position:]:
+   position += 1
+print(position)
+OUTPUT:
+helloworld
+10
+
+================================================================================================================================
+
+<<9>>QUESTION--->Python program to print even length words in a string
+CODE:
+str = input()
+list1=[]
+for i in range(len(str)):
+   if i%2==0:
+      list1.append(str[i])
+print(*list1,sep="")
+OUTPUT:
+helloworld
+hlool
+
+=================================================================================================================================
+
+<<10>>QUESTION--->Python program to accept the strings which contains all vowels
+CODE:
+str=input()
+vowels=['a','e','i','o','u']
+str=str.lower()
+temp=0
+for i in vowels:
+   if i in str:
+      temp=temp+1
+print('yes' if temp==5 else 'no')
+OUTPUT:
+gekiodusa
+yes
+
+==================================================================================================================================
+
+<<12>>QUESTION--->Remove all duplicates from a given string in Python
+CODE:
+str = input()
+str1=[]
+for i in str:
+   if i not in str1:
+      str1.append(i)
+print(*str1,sep="")
+OUTPUT:
+geeksforgeeks
+geksfor
+
+===================================================================================================================================
+
+<<13>>QUESTION--->Python – Least Frequent Character in String
+CODE:
+
+
+====================================================================================================================================
+
+<<15>>QUESTION--->Python | Maximum frequency character in String
+CODE:
+
+====================================================================================================================================
+
+<<16>>QUESTION--->Python | Program to check if a string contains any special character
+CODE:
+str=input()
+special_chr='""!@#$%^&*()-+?_=,<>/""'
+temp=0
+for i in special_chr:
+    if i in str:
+        temp=1
+        break
+print('yes' if temp==1 else 'no')
+OUTPUT:
+hello@world
+yes
+
+=====================================================================================================================================
+
+<<17>>QUESTION--->Generating random strings until a given string is generated
+CODE:
+
+=======================================================================================================================================
+
+<<18>>QUESTION--->Find words which are greater than given length k
+CODE:
+str=input()
+num=int(input())
+list1=[]
+str=str.split()
+for i in str:
+    if len(i)>num:
+        list1.append(i)
+print(*list1)
+OUTPUT:
+string is fun in python
+3
+string python
+
+=====================================================================================================================================
+
+<<19>>QUESTION--->Python program for removing i-th character from a string
+CODE:
+str=input()
+ith=int(input())
+new_str=str[:ith-1]+str[ith:]
+print(new_str)
+OUTPUT:
+helloworld
+5
+hellworld
+
+=====================================================================================================================================
+
+<<20>>QUESTION--->Python program to split and join a string
+CODE:
+str=input()
+str=str.split()
+print(str)
+str='-'.join(str)
+print(str)
+OUTPUT:
+geek for deeks
+['geek', 'for', 'deeks']
+geek-for-deeks
+
+=======================================================================================================================================
+
+<<21>>QUESTION--->Python | Check if a given string is binary string or not
+CODE:
+str=input()
+temp=0
+c=0
+if str.isalnum():
+    c=1
+binary=[0,1]
+str=set(str)
+if c==0:
+    for i in str:
+        for j in binary:
+            if int(i)==j:
+                temp+=1
+print('yes' if temp==2 else 'no')
+OUTPUT:
+101010101010
+yes
+
+=========================================================================================================================================
+
+<<22>>QUESTION--->Python program to find uncommon words from two Strings
+CODE:
+str1=input()
+str2=input()
+str1=str1.split()
+str2=str2.split()
+list1=[]
+for i in str1:
+    if i in str2:
+        h=1
+    else:
+        list1.append(i)
+print(*list1)
+OUTPUT:
+Learning from Geeks for Geeks
+Geeks for Geeks               
+Learning from
+
+=============================================================================================================================================
+
+<<23>>QUESTION--->

@@ -1,0 +1,237 @@
+                                      PYTHON BASIC PROGRAMS
+
+<<1>>QUESTION--->Python program to add two numbers
+CODE:
+num1=int(input())
+num2=int(input())
+print(num1+num2)
+OUTPUT:
+5
+4
+9
+
+============================================================================================================
+
+<<2>>QUESTION--->Maximum of two numbers in Python
+CODE:
+num1=int(input())
+num2=int(input())
+if a>b:
+    print('max:',num1)
+else:
+    print('max:',num2)
+OUTPUT:
+7
+8
+max:8
+
+=============================================================================================================
+
+<<3>>QUESTION--->Python Program for factorial of a number
+CODE:
+fact=int(input())
+factorial=1
+for i in range(1,fact+1):
+    factorial=factorial*i
+print('factorial:',factorial)
+OUTPUT:
+5
+factorial:120
+
+================================================================================================================
+
+<<4>>QUESTION--->Python Program for simple interest
+CODE:
+p=int(input())
+t=int(input())
+r=int(input())
+interest=(p*t*r)/100
+print('interest:',interest)
+OUTPUT:
+10000
+5
+5
+interest: 2500.0
+
+======================================================================================================================
+
+<<5>>QUESTION--->Python Program for compound interest
+CODE:
+p=int(input())
+t=int(input())
+r=float(input())
+interest=p*(pow((1+r/100),t))
+compound=interest-p
+print('compound interest:',compound)
+OUTPUT:
+1200
+2
+5.4
+compound interest: 133.0992000000001
+
+=======================================================================================================================
+
+<<6>>QUESTION--->Python Program to check Armstrong Number
+CODE:
+num = int(input())
+sum = 0
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum = sum+(digit ** 3)
+   temp =temp/10
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+OUTPUT:
+663
+663 is not an Armstrong number
+
+=================================================================================================================
+
+<<7>>QUESTION--->Python Program for Program to find area of a circle
+CODE:
+radius=int(input())
+pi=3.14
+area=pi*radius*radius
+print("%.2f"%area)
+OUTPUT:
+6
+113.04
+
+==================================================================================================================
+
+<<8>>QUESTION--->Python program to print all Prime numbers in an Interval
+CODE:
+start = int(input())
+end = int(input())
+print("Prime numbers between", start, "and", end, "are:")
+for num in range(start, end + 1):
+   if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)
+OUTPUT:
+10
+20
+Prime numbers between 10 and 20 are:
+11
+13
+17
+19
+
+==============================================================================================================
+
+<<9>>QUESTION--->Python program to check whether a number is Prime or not
+CODE:
+num=int(input())
+flag = False
+if num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            flag = True
+            break
+if flag:
+    print(num, "is not a prime number")
+else:
+    print(num, "is a prime number")
+OUTPUT:
+13
+13 is a prime number
+
+===============================================================================================================
+
+<<10>>QUESTION--->Python Program for n-th Fibonacci number
+CODE:
+def fibonacci(n):
+    a = 0
+    b = 1 
+    if n == 0: 
+        return a 
+    elif n == 1: 
+        return b
+    else: 
+        for i in range(2,n): 
+            c = a + b 
+            a = b 
+            b = c
+        return b 
+print("the nth fibnocci number is:",fibonacci(int(input())))
+OUTPUT:
+10
+the nth fibnocci number is: 34
+
+======================================================================================================================
+
+<<11>>QUESTION--->Python Program for How to check if a given number is Fibonacci number?
+CODE:
+num=int(input())
+c=0
+a=1
+b=1
+if num==0 or num==1:
+    print("Yes")
+else:
+    while c<num:
+        c=a+b
+        b=a
+        a=c
+    if c==num:
+        print("Yes it is fibonacci number")
+    else:
+        print("Not fibonacci number")
+OUTPUT:
+34
+Yes it is fibonacci number
+
+=========================================================================================================================
+
+<<12>>QUESTION--->Program to print ASCII Value of a character
+CODE:
+char=input()
+print('the given characters ASCII value is:',ord(char))
+OUTPUT:
+p
+the given character ASCII value is:112
+
+==========================================================================================================================
+
+<<13>>QUESTION--->Python Program for Sum of squares of first n natural numbers
+CODE:
+num=int(input())
+b=0
+for i in range(1, num+1) :
+        b = b + (i * i)
+print('Sum of squares of first n natural numbers:',b)
+OUTPUT:
+4
+Sum of squares of first n natural numbers: 30
+
+==========================================================================================================================
+
+<<14>>QUESTION--->Python Program for cube sum of first n natural numbers
+CODE:
+num=int(input())
+sum = 0
+for i in range(1,num+1):
+    sum +=i*i*i
+print('cube Sum of first n natural numbers:',sum)
+OUTPUT:
+enter the number:5
+cube Sum of first n natural numbers: 225
+
+=================================xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx==============================================
+
+
+
+
+
+
+
+
+
+
+
